@@ -1,0 +1,14 @@
+service: api-kotlin-jvm
+
+provider:
+  name: aws
+  region: us-west-2
+  runtime: java8
+  stage: ${env:STAGE}
+
+package:
+  artifact: build/libs/api-kotlin-jvm-1.0-SNAPSHOT.jar
+
+functions:
+  hello:
+    handler: dev.rocky.Handler
