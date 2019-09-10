@@ -7,7 +7,7 @@ provider:
   stage: ${env:STAGE}
 
 package:
-  artifact: build/libs/api-kotlin-jvm-1.0-SNAPSHOT.jar
+  artifact: build/libs/api-kotlin-jvm-1.0-SNAPSHOT-all.jar
 
 functions:
   hello:
